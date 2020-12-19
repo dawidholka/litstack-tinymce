@@ -14,7 +14,7 @@ class TinyMCEServiceProvider extends ServiceProvider
         Form::registerField('tinymce', TinyMCEField::class);
 
         $this->publishes([
-            __DIR__.'/../dist' => public_path('vendor/litstack-tinymce'),
+            __DIR__.'/../public' => public_path('vendor/litstack-tinymce'),
         ], 'public');
     }
 }
