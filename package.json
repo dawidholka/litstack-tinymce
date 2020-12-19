@@ -19,7 +19,9 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@tinymce/tinymce-vue": "^3.2.6"
+  },
   "devDependencies": {
     "cross-env": "^7.0.2",
     "laravel-mix": "^5.0.9",
