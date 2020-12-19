@@ -4,7 +4,7 @@
       <editor
           :api-key="field.apikey"
           :initial-value="value"
-          @onChange="update($event)"
+          @onChange="update"
           :init="{
          height: 500,
          menubar: false,
@@ -41,8 +41,8 @@ export default {
     }
   },
   methods: {
-    update(value) {
-      console.log(value);
+    update(event, editor) {
+      console.log(value, editor);
       this.$emit('input', value)
     }
   }
