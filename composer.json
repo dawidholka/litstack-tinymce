@@ -1,10 +1,43 @@
 {
-    "name": "dawidholka/litstack-tinymce",
-    "authors": [
-        {
-            "name": "Dawid Holka",
-            "email": "dawidholka97@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "dawidholka/litstack-tinymce",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dawid Holka",
+      "email": "dawidholka97@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "autoload": {
+    "psr-4": {
+      "DawidHolka\\LitstackTinyMCE\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "litstack/litstack": "^3.1.2"
+  },
+  "require-dev": {
+    "litstack/rehearsal": "^1.0.1",
+    "phpunit/phpunit": "^9.4",
+    "mockery/mockery": "^1.4"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DawidHolka\\LitstackTinyMCE\\TinyMCEServiceProvider"
+      ]
+    },
+    "branch-alias": {
+      "dev-maint": "1.x-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
