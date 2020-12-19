@@ -1,10 +1,11 @@
 <template>
-  <div style="width:100%">
-    <editor
-        :api-key="field.apikey"
-        :initial-value="value"
-        @onChange="$emit('input',$event)"
-        :init="{
+  <lit-base-field :field="field" :model="model">
+    <template>
+      <editor
+          :api-key="field.apikey"
+          :initial-value="value"
+          @onChange="$emit('input',$event)"
+          :init="{
          height: 500,
          menubar: false,
          plugins: [
@@ -17,8 +18,9 @@
          toolbar_mode: 'sliding',
          contextmenu: 'link image imagetools table',
        }"
-    />
-  </div>
+      />
+    </template>
+  </lit-base-field>
 </template>
 
 <script>
