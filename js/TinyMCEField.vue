@@ -4,7 +4,7 @@
       <editor
           :api-key="field.apikey"
           :initial-value="value"
-          @onChange="this.update($event)"
+          @onChange="update($event)"
           :init="{
          height: 500,
          menubar: false,
