@@ -1,0 +1,10 @@
+{
+    "name": "dawidholka/litstack-tinymce",
+    "authors": [
+        {
+            "name": "Dawid Holka",
+            "email": "dawidholka97@gmail.com"
+        }
+    ],
+    "require": {}
+}
