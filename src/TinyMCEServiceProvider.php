@@ -11,9 +11,6 @@ class TinyMCEServiceProvider extends ServiceProvider
     public function boot()
     {
         Lit::script(__DIR__ . '../dist/litstack-tinymce.js');
-
-
-        dd('test');
         Form::registerField('tinymce', TinyMCEField::class);
     }
 }
