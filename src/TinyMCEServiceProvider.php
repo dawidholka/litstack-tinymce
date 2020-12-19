@@ -12,5 +12,9 @@ class TinyMCEServiceProvider extends ServiceProvider
     {
         Lit::script(asset(__DIR__ . '/../dist/litstack-tinymce.js'));
         Form::registerField('tinymce', TinyMCEField::class);
+
+        $this->publishes([
+            __DIR__.'/../dist' => public_path('vendor/litstack-tinymce'),
+        ], 'public');
     }
 }
