@@ -12,8 +12,8 @@ class TinyMCEServiceProvider extends ServiceProvider
     {
         Lit::script(__DIR__ . '../dist/litstack-tinymce.js');
 
-        $this->callAfterResolving('lit.form', function (Form $form) {
-            $form->field('tinymce', TinyMCEField::class);
-        });
+
+        dd('test');
+        Form::registerField('tinymce', TinyMCEField::class);
     }
 }
