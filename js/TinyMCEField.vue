@@ -42,8 +42,8 @@ export default {
   },
   methods: {
     update(event, editor) {
-      console.log(value, editor);
-      this.$emit('input', value)
+      console.log(event, editor);
+      this.$emit('input', editor.getContent())
     }
   }
 };
