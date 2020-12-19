@@ -10,7 +10,7 @@ class TinyMCEServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        Lit::script('/vendor/litstack-tinymce/public/litstack-tinymce.min.js');
+        Lit::script('/vendor/litstack-tinymce/js/litstack-tinymce.min.js');
         Form::registerField('tinymce', TinyMCEField::class);
 
         $this->publishes([
