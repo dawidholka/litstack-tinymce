@@ -1,10 +1,11 @@
 <template>
-  <lit-base-field :field="field">
-    <!-- ... -->
-  </lit-base-field>
-  <editor
-      api-key="no-api-key"
-      :init="{
+  <div>
+    <lit-base-field :field="field">
+      <!-- ... -->
+    </lit-base-field>
+    <editor
+        api-key="no-api-key"
+        :init="{
          height: 500,
          menubar: false,
          plugins: [
@@ -17,7 +18,8 @@
            alignleft aligncenter alignright alignjustify | \
            bullist numlist outdent indent | removeformat | help'
        }"
-  />
+    />
+  </div>
 </template>
 
 <script>
