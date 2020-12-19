@@ -1,4 +1,4 @@
-import Lit from 'litstack/resources/js/common/lit';
+import Lit from '../vendor/litstack/litstack/resources/js/common/lit';
 import TinyMCEField from "./TinyMCEField";
 
 Lit.booting((Vue) => {
