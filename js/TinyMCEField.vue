@@ -4,7 +4,7 @@
       <!-- ... -->
     </lit-base-field>
     <editor
-        api-key="no-api-key"
+        :api-key="field.apikey"
         :init="{
          height: 500,
          menubar: false,

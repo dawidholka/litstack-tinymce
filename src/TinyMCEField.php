@@ -22,4 +22,11 @@ class TinyMCEField extends BaseField
     {
         //
     }
+
+    public function apiKey(string $apikey)
+    {
+        $this->setAttribute('apikey', $apikey);
+
+        return $this;
+    }
 }
