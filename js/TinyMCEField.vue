@@ -1,22 +1,21 @@
 <template>
-  <div>
-    <lit-base-field :field="field">
-      <!-- ... -->
-    </lit-base-field>
+  <div style="width:100%">
     <editor
         :api-key="field.apikey"
+        :initial-value="value"
+        @onChange="$emit('input',$event)"
         :init="{
          height: 500,
          menubar: false,
          plugins: [
-           'advlist autolink lists link image charmap print preview anchor',
-           'searchreplace visualblocks code fullscreen',
-           'insertdatetime media table paste code help wordcount'
+           'preview paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr nonbreaking toc insertdatetime advlist lists wordcount imagetools textpattern noneditable charmap quickbars emoticons'
          ],
          toolbar:
-           'undo redo | formatselect | bold italic backcolor | \
-           alignleft aligncenter alignright alignjustify | \
-           bullist numlist outdent indent | removeformat | help'
+           'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | charmap emoticons | fullscreen  preview save | image media link codesample | ltr rtl',
+         quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
+         noneditable_noneditable_class: 'mceNonEditable',
+         toolbar_mode: 'sliding',
+         contextmenu: 'link image imagetools table',
        }"
     />
   </div>
